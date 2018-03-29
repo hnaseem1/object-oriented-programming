@@ -23,7 +23,11 @@ class Student < Person
 
 chris = Student.new("Chris")
 
-p zain.greetings
+p chris.greetings
+p chris.learn
+
+# Method below doesnt work cause instructor and student share person, student will only inherit the methods from person and the method below is defined inside the professor class. Inheritence work only through parent and child
+p chris.teach
 
 end
 
@@ -33,9 +37,11 @@ class Instructor < Person
     "Everything in ruby is an object"
   end
 
-nadia = Student.new("Nadia")
+nadia = Instructor.new("Nadia")
 
 p nadia.greetings
+p nadia.teach
+
 
 
 end
