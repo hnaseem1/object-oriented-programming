@@ -7,15 +7,15 @@ class MathGenius < Multilinguist
   end
 
   def report_total(list)
-    say_in_local_language(list.inject(0){|sum,x| sum + x})
+    say_in_local_language("Your Total is #{list.inject(0){|sum,x| sum + x}}")
   end
 
   def travel_to(country)
     super(country)
   end
 
-  def say_in_local_language(sum)
-    super("Your Total is #{sum}")
+  def say_in_local_language(msg)
+    super(msg)
   end
 
 end
