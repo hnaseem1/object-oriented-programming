@@ -20,10 +20,9 @@ class Student < Person
     "I get it!"
   end
 
-hasan = Student.new("Hasan")
-zain = Student.new("Zain")
 
-p hasan.greetings
+chris = Student.new("Chris")
+
 p zain.greetings
 
 end
@@ -34,10 +33,9 @@ class Instructor < Person
     "Everything in ruby is an object"
   end
 
-elvis = Student.new("Elvis")
-danial = Student.new("Danial")
+nadia = Student.new("Nadia")
 
-p elvis.greetings
-p danial.greetings
+p nadia.greetings
+
 
 end
